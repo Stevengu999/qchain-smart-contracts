@@ -1,0 +1,31 @@
+{
+	"name": "qchain-contracts",
+	"version": "1.0.0.",
+	"description": "Qchain ICO Smart Contracts. [http://qchain.co]",
+	"author": "Zerion <inbox@zerion.io>",
+	"license": "Apache License 2.0",
+	"homepage": "https://qchain.co",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/zeriontech/qchain-contracts"
+	},
+	"private": true,
+	"engines": {
+		"yarn": "^1.2.1"
+	},
+	"dependencies": {
+		"ethereumjs-testrpc": "^4.0.1",
+		"ethereumjs-wallet": "^0.6.0",
+		"truffle": "^3.4.11",
+		"web3": "^0.20.1",
+		"web3-provider-engine": "^13.2.9",
+		"yarn": "^1.2.1"
+	},
+	"scripts": {
+		"test": "./serve/run_tests.sh",
+		"deploy_kovan":  "yarn run truffle migrate --network kovan --reset"
+	},
+	"devDependencies": {
+		"@angular/cli": "^1.4.9"
+	}
+}
